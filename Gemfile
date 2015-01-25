@@ -1,15 +1,16 @@
 source 'https://rubygems.org'
 
-#group :development, :test do
-#  gem 'sqlite3'
-#end
+group :development, :test do
+   gem 'sqlite3'
+   gem "better_errors"
+end
 
 group :production do
    gem 'pg'
    gem 'rails_12factor'
 end
 
-ruby '2.0.0'
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
